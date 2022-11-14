@@ -1,27 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="12.293">
-    <testcase classname="US1005 Parametreli Configuration.properties Kullanimi" name="TC09 kullanici amazon sayfasina gidebilmeli" time="4.572">
-        <system-out>
-            <![CDATA[Given Kullanici "arabamUrl" anasayfaya gider................................passed
-Then url'in "arabam" icerdigini test eder...................................passed
-And Sayfayi kapatir.........................................................passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="US1005 Parametreli Configuration.properties Kullanimi" name="TC10 kullanici mycoursedemy sayfasina gidebilmeli" time="2.322">
-        <system-out>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="0.127">
+    <testcase classname="US1006 Dogru kullanici adi ve password ile pozitif login testi" name="TC12 Kullanici mycoursedemy sitesine giris yapabilmeli" time="0.023">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception">
             <![CDATA[Given Kullanici "myUrl" anasayfaya gider....................................passed
-Then url'in "mycoursedemy" icerdigini test eder.............................passed
-And Sayfayi kapatir.........................................................passed
+Then myCourse anasayfa login linkine tiklar.................................undefined
+And myCourse kullanici adi olarak "gecerliKullaniciAdi" girer...............skipped
+And myCourse password olarak "gecerli password" girer.......................skipped
+And myCourse login butonuna basar...........................................skipped
+Then myCourse giris yapabildigini test eder.................................skipped
+And Sayfayi kapatir.........................................................skipped
 ]]>
-        </system-out>
-    </testcase>
-    <testcase classname="US1005 Parametreli Configuration.properties Kullanimi" name="TC11 kullanici wisequarter sayfasina gidebilmeli" time="5.298">
-        <system-out>
-            <![CDATA[Given Kullanici "wiseUrl" anasayfaya gider..................................passed
-Then url'in "wisequarter" icerdigini test eder..............................passed
-And Sayfayi kapatir.........................................................passed
-]]>
-        </system-out>
+        </failure>
     </testcase>
 </testsuite>
