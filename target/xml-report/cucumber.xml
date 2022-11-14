@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="0.127">
-    <testcase classname="US1006 Dogru kullanici adi ve password ile pozitif login testi" name="TC12 Kullanici mycoursedemy sitesine giris yapabilmeli" time="0.023">
-        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="6.084">
+    <testcase classname="US1006 Dogru kullanici adi ve password ile pozitif login testi" name="TC12 Kullanici mycoursedemy sitesine giris yapabilmeli" time="5.994">
+        <system-out>
             <![CDATA[Given Kullanici "myUrl" anasayfaya gider....................................passed
-Then myCourse anasayfa login linkine tiklar.................................undefined
-And myCourse kullanici adi olarak "gecerliKullaniciAdi" girer...............skipped
-And myCourse password olarak "gecerli password" girer.......................skipped
-And myCourse login butonuna basar...........................................skipped
-Then myCourse giris yapabildigini test eder.................................skipped
-And Sayfayi kapatir.........................................................skipped
+Then myCourse anasayfa login linkine tiklar.................................passed
+And myCourse kullanici adi olarak "myGecerliEmail" girer....................passed
+And myCourse password olarak "myGecerliPassword" girer......................passed
+And myCourse login butonuna basar...........................................passed
+Then myCourse giris yapabildigini test eder.................................passed
+And Sayfayi kapatir.........................................................passed
 ]]>
-        </failure>
+        </system-out>
     </testcase>
 </testsuite>

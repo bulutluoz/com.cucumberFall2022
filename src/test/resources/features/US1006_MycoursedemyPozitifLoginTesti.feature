@@ -5,8 +5,8 @@ Feature: US1006 Dogru kullanici adi ve password ile pozitif login testi
 
     Given Kullanici "myUrl" anasayfaya gider
     Then myCourse anasayfa login linkine tiklar
-    And myCourse kullanici adi olarak "gecerliKullaniciAdi" girer
-    And myCourse password olarak "gecerli password" girer
+    And myCourse kullanici adi olarak "myGecerliEmail" girer
+    And myCourse password olarak "myGecerliPassword" girer
     And myCourse login butonuna basar
     Then myCourse giris yapabildigini test eder
     And Sayfayi kapatir
