@@ -1,13 +1,37 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="6.084">
-    <testcase classname="US1006 Dogru kullanici adi ve password ile pozitif login testi" name="TC12 Kullanici mycoursedemy sitesine giris yapabilmeli" time="5.994">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="10.521">
+    <testcase classname="US1007 Yanlis Bilgilerle Giris yapilamaz" name="TC13 Yanlis email, dogru password ile giris yapilamamali" time="3.495">
+        <system-out>
+            <![CDATA[Given Kullanici "myUrl" anasayfaya gider....................................passed
+Then myCourse anasayfa login linkine tiklar.................................passed
+And myCourse kullanici adi olarak "myYanlisEmail" girer.....................passed
+And myCourse password olarak "myGecerliPassword" girer......................passed
+And myCourse login butonuna basar...........................................passed
+Then myCourse giris yapilamadigini test eder................................passed
+And Sayfayi kapatir.........................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US1007 Yanlis Bilgilerle Giris yapilamaz" name="TC14 gecerli email, yanlis password ile giris yapilamamali" time="2.576">
         <system-out>
             <![CDATA[Given Kullanici "myUrl" anasayfaya gider....................................passed
 Then myCourse anasayfa login linkine tiklar.................................passed
 And myCourse kullanici adi olarak "myGecerliEmail" girer....................passed
-And myCourse password olarak "myGecerliPassword" girer......................passed
+And myCourse password olarak "myYanlisPassword" girer.......................passed
 And myCourse login butonuna basar...........................................passed
-Then myCourse giris yapabildigini test eder.................................passed
+Then myCourse giris yapilamadigini test eder................................passed
+And Sayfayi kapatir.........................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US1007 Yanlis Bilgilerle Giris yapilamaz" name="TC15 Yanlis email, yanlis password ile giris yapilamamali" time="4.357">
+        <system-out>
+            <![CDATA[Given Kullanici "myUrl" anasayfaya gider....................................passed
+Then myCourse anasayfa login linkine tiklar.................................passed
+And myCourse kullanici adi olarak "myYanlisEmail" girer.....................passed
+And myCourse password olarak "myYanlisPassword" girer.......................passed
+And myCourse login butonuna basar...........................................passed
+Then myCourse giris yapilamadigini test eder................................passed
 And Sayfayi kapatir.........................................................passed
 ]]>
         </system-out>

@@ -28,4 +28,9 @@ public class MycoursedemyStepdefinitions {
     public void my_course_giris_yapabildigini_test_eder() {
         Assert.assertTrue(mycoursedemyPage.coursesLinki.isDisplayed());
     }
+
+    @Then("myCourse giris yapilamadigini test eder")
+    public void mycourseGirisYapilamadiginiTestEder() {
+        Assert.assertTrue(mycoursedemyPage.loginLinki.isDisplayed());
+    }
 }
