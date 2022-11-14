@@ -33,4 +33,25 @@ public class AmazonStepDefinitions {
     public void kullaniciAmazonAnasayfayaGider() {
         Driver.getDriver().get(ConfigReader.getProperty("amazonUrl"));
     }
+
+    @Then("Arama kutusuna Java yazip aratir")
+    public void aramaKutusunaJavaYazipAratir() {
+        amazonPage.aramaKutusu.sendKeys("Java" + Keys.ENTER);
+    }
+    @Then("Arama sonuclarinin Java icerdigini test eder")
+    public void arama_sonuclarinin_java_icerdigini_test_eder() {
+        String actualAramaSonucu=amazonPage.aramaSonucElementi.getText();
+        String expectedkelime="Java111";
+        Assert.assertTrue(actualAramaSonucu.contains(expectedkelime));
+    }
+    @Then("Arama kutusuna Apple yazip aratir")
+    public void arama_kutusuna_apple_yazip_aratir() {
+        amazonPage.aramaKutusu.sendKeys("Apple" + Keys.ENTER);
+    }
+    @Then("Sonuclarin Apple icerdigini test eder")
+    public void sonuclarin_apple_icerdigini_test_eder() {
+        String actualAramaSonucu=amazonPage.aramaSonucElementi.getText();
+        String expectedkelime="Apple111";
+        Assert.assertTrue(actualAramaSonucu.contains(expectedkelime));
+    }
 }

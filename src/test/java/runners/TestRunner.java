@@ -30,7 +30,10 @@ public class TestRunner {
 
    dryRun : iki secenek var
    dryRun=true; yazdigimizda Testimizi calistirmadan sadece eksik adimlari bize verir
-   deyRun=false yazdigimizda testlerimizi calistirir
+                eksik adim yoksa, testi calistirmadan test passed yazar
+   dryRun=false yazdigimizda testlerimizi calistirir
+                eksik adim varsa, ilk eksik adimda calismayi durdurur ve
+                eksik adimlari bize verir
 
      */
 }
