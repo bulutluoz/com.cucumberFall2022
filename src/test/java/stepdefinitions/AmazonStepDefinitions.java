@@ -1,5 +1,6 @@
 package stepdefinitions;
 
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -41,7 +42,7 @@ public class AmazonStepDefinitions {
     @Then("Arama sonuclarinin Java icerdigini test eder")
     public void arama_sonuclarinin_java_icerdigini_test_eder() {
         String actualAramaSonucu=amazonPage.aramaSonucElementi.getText();
-        String expectedkelime="Java111";
+        String expectedkelime="Java";
         Assert.assertTrue(actualAramaSonucu.contains(expectedkelime));
     }
     @Then("Arama kutusuna Apple yazip aratir")
@@ -51,7 +52,18 @@ public class AmazonStepDefinitions {
     @Then("Sonuclarin Apple icerdigini test eder")
     public void sonuclarin_apple_icerdigini_test_eder() {
         String actualAramaSonucu=amazonPage.aramaSonucElementi.getText();
-        String expectedkelime="Apple111";
+        String expectedkelime="Apple";
         Assert.assertTrue(actualAramaSonucu.contains(expectedkelime));
+    }
+
+    @Then("Arama cubuguna {string} yazip aratir")
+    public void aramaCubugunaYazipAratir(String istenenKelime) {
+        amazonPage.aramaKutusu.sendKeys(istenenKelime + Keys.ENTER);
+    }
+
+    @And("Arama sonuclarinin {string} icerdigini test eder")
+    public void aramaSonuclarininIcerdiginiTestEder(String istenenKelime) {
+        String actualAramaSonucu=amazonPage.aramaSonucElementi.getText();
+        Assert.assertTrue(actualAramaSonucu.contains(istenenKelime));
     }
 }

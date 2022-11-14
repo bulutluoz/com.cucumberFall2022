@@ -1,46 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="11.408">
-    <testcase classname="US1002_Amazon Arama Testi" name="TC02  Kullanici amazonda Nutella aramasi yapar" time="5.221">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="5.18">
+    <testcase classname="US1004 Parametre Kullanma" name="TC08 Kullanici parametre ile verilen kelimeyi amazonda aratabilmeli" time="5.102">
         <system-out>
             <![CDATA[Given Kullanici amazon anasayfaya gider.....................................passed
-Then Arama cubuguna Nutella yazip aratir....................................passed
-And Arama sonuclarinin Nutella icerdigini test eder.........................passed
+Then Arama cubuguna "Levent" yazip aratir...................................passed
+And Arama sonuclarinin "Levent" icerdigini test eder........................passed
 And Sayfayi kapatir.........................................................passed
 ]]>
         </system-out>
-    </testcase>
-    <testcase classname="US1002_Amazon Arama Testi" name="TC03 Kullanici amazonda Java aramasi yapar" time="4.034">
-        <failure message="" type="java.lang.AssertionError">
-            <![CDATA[Given Kullanici amazon anasayfaya gider.....................................passed
-Then Arama kutusuna Java yazip aratir.......................................passed
-And Arama sonuclarinin Java icerdigini test eder............................failed
-And Sayfayi kapatir.........................................................skipped
-
-StackTrace:
-java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:87)
-	at org.junit.Assert.assertTrue(Assert.java:42)
-	at org.junit.Assert.assertTrue(Assert.java:53)
-	at stepdefinitions.AmazonStepDefinitions.arama_sonuclarinin_java_icerdigini_test_eder(AmazonStepDefinitions.java:45)
-	at ✽.Arama sonuclarinin Java icerdigini test eder(file:///Users/ahmetbulutluoz/Desktop/com.CucumberFall2022/src/test/resources/features/US1002_AmazonAramaTesti.feature:19)
-]]>
-        </failure>
-    </testcase>
-    <testcase classname="US1002_Amazon Arama Testi" name="TC04 Kullanici amazonda Apple aramasi yapar" time="2.059">
-        <failure message="" type="java.lang.AssertionError">
-            <![CDATA[Given Kullanici amazon anasayfaya gider.....................................passed
-Then Arama kutusuna Apple yazip aratir......................................passed
-And Sonuclarin Apple icerdigini test eder...................................failed
-And Sayfayi kapatir.........................................................skipped
-
-StackTrace:
-java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:87)
-	at org.junit.Assert.assertTrue(Assert.java:42)
-	at org.junit.Assert.assertTrue(Assert.java:53)
-	at stepdefinitions.AmazonStepDefinitions.sonuclarin_apple_icerdigini_test_eder(AmazonStepDefinitions.java:55)
-	at ✽.Sonuclarin Apple icerdigini test eder(file:///Users/ahmetbulutluoz/Desktop/com.CucumberFall2022/src/test/resources/features/US1002_AmazonAramaTesti.feature:25)
-]]>
-        </failure>
     </testcase>
 </testsuite>
