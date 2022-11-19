@@ -12,7 +12,7 @@ Feature: US1002_Amazon Arama Testi
     Then Arama cubuguna Nutella yazip aratir
     And Arama sonuclarinin Nutella icerdigini test eder
     And Sayfayi kapatir
-
+  @smokeTest @Regression
   Scenario: TC03 Kullanici amazonda Java aramasi yapar
     Given Kullanici amazon anasayfaya gider
     Then Arama kutusuna Java yazip aratir

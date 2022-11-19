@@ -1,5 +1,5 @@
 Feature: US1001 Amazon arama testi
-
+  @Regression
   Scenario: TC01 Kullanici Amazonda arama yapabilmeli
 
     Given Kullanici amazon anasayfaya gider

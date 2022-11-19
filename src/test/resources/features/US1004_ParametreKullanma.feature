@@ -1,7 +1,7 @@
 
   Feature: US1004 Parametre Kullanma
 
-
+    @smokeTest
     Scenario: TC08 Kullanici parametre ile verilen kelimeyi amazonda aratabilmeli
 
       Given Kullanici amazon anasayfaya gider
