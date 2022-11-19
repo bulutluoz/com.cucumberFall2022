@@ -1,15 +1,63 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="0.122">
-    <testcase classname="US1008 Herokuapp Wait Testleri" name="TC16 Kullanici wait islemlerinin calistigini test eder" time="0.023">
-        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception">
-            <![CDATA[Given Kullanici "herokuUrl" anasayfaya gider................................passed
-Then Herokuapp Add Element butonuna basar...................................undefined
-And Herokuapp Delete butonu gorunmesini bekler..............................skipped
-And Herokuapp Delete butonunun gorunur oldugunu test eder...................skipped
-Then Herokuapp Delete butonuna basarak butonu siler.........................skipped
-And Herokuapp Delete butonunun gorunmedigini test eder......................skipped
-Then Sayfayi kapatir........................................................skipped
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="5" time="29.377">
+    <testcase classname="US1010 liste olarak verilen wrong user ile negatif login testi" name="_2" time="6.758">
+        <system-out>
+            <![CDATA[Given Kullanici "myUrl" anasayfaya gider....................................passed
+Then myCourse anasayfa login linkine tiklar.................................passed
+And myCourse kullanici adi olarak "myYanlisEmail" girer.....................passed
+And myCourse password olarak "myYanlisPassword" girer.......................passed
+Then myCourse login butonuna basar..........................................passed
+And myCourse giris yapilamadigini test eder.................................passed
+Then Sayfayi kapatir........................................................passed
 ]]>
-        </failure>
+        </system-out>
+    </testcase>
+    <testcase classname="US1010 liste olarak verilen wrong user ile negatif login testi" name="_3" time="5.628">
+        <system-out>
+            <![CDATA[Given Kullanici "myUrl" anasayfaya gider....................................passed
+Then myCourse anasayfa login linkine tiklar.................................passed
+And myCourse kullanici adi olarak "myYanlisEmail1" girer....................passed
+And myCourse password olarak "myYanlisPassword1" girer......................passed
+Then myCourse login butonuna basar..........................................passed
+And myCourse giris yapilamadigini test eder.................................passed
+Then Sayfayi kapatir........................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US1010 liste olarak verilen wrong user ile negatif login testi" name="_4" time="5.493">
+        <system-out>
+            <![CDATA[Given Kullanici "myUrl" anasayfaya gider....................................passed
+Then myCourse anasayfa login linkine tiklar.................................passed
+And myCourse kullanici adi olarak "myYanlisEmail2" girer....................passed
+And myCourse password olarak "myYanlisPassword2" girer......................passed
+Then myCourse login butonuna basar..........................................passed
+And myCourse giris yapilamadigini test eder.................................passed
+Then Sayfayi kapatir........................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US1010 liste olarak verilen wrong user ile negatif login testi" name="_5" time="5.58">
+        <system-out>
+            <![CDATA[Given Kullanici "myUrl" anasayfaya gider....................................passed
+Then myCourse anasayfa login linkine tiklar.................................passed
+And myCourse kullanici adi olarak "myYanlisEmail3" girer....................passed
+And myCourse password olarak "myYanlisPassword3" girer......................passed
+Then myCourse login butonuna basar..........................................passed
+And myCourse giris yapilamadigini test eder.................................passed
+Then Sayfayi kapatir........................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US1010 liste olarak verilen wrong user ile negatif login testi" name="_6" time="5.809">
+        <system-out>
+            <![CDATA[Given Kullanici "myUrl" anasayfaya gider....................................passed
+Then myCourse anasayfa login linkine tiklar.................................passed
+And myCourse kullanici adi olarak "myYanlisEmail4" girer....................passed
+And myCourse password olarak "myYanlisPassword4" girer......................passed
+Then myCourse login butonuna basar..........................................passed
+And myCourse giris yapilamadigini test eder.................................passed
+Then Sayfayi kapatir........................................................passed
+]]>
+        </system-out>
     </testcase>
 </testsuite>

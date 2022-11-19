@@ -5,6 +5,8 @@ import org.junit.Assert;
 import pages.HerokuappPage;
 import utilities.ReusableMethods;
 
+import java.util.NoSuchElementException;
+
 public class HerokuappStepdefinitions {
     HerokuappPage herokuappPage=new HerokuappPage();
 
@@ -30,6 +32,13 @@ public class HerokuappStepdefinitions {
     }
     @Then("Herokuapp Delete butonunun gorunmedigini test eder")
     public void herokuapp_delete_butonunun_gorunmedigini_test_eder() {
+        boolean flag=false;
+        try {
+            Assert.assertFalse(herokuappPage.deleteButton.isDisplayed());
+        } catch (Exception e) {
+            flag=true;
+        }
 
+        Assert.assertTrue(flag);
     }
 }

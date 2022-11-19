@@ -1,6 +1,6 @@
 Feature: US1008 Herokuapp Wait Testleri
 
-  @wip
+
   Scenario: TC16 Kullanici wait islemlerinin calistigini test eder
 
     Given Kullanici "herokuUrl" anasayfaya gider
