@@ -5,7 +5,7 @@ Feature: US1002_Amazon Arama Testi
   # Kullanicinin arama yapmasi icin 3 scenario olusturun
   # Nutella, Java ve Apple icin arama yapip sonuclarin aranan kelime icerdigini test edin
 
-  @Paralel1
+  @pt1
   Scenario: TC02  Kullanici amazonda Nutella aramasi yapar
 
     Given Kullanici amazon anasayfaya gider

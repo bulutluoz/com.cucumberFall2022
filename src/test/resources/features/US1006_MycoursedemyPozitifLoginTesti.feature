@@ -1,6 +1,6 @@
 @myCourse
 Feature: US1006 Dogru kullanici adi ve password ile pozitif login testi
-  @smokeTest @Regression
+  @smokeTest @Regression @pt2
   Scenario: TC12 Kullanici mycoursedemy sitesine giris yapabilmeli
 
     Given Kullanici "myUrl" anasayfaya gider

@@ -1,0 +1,16 @@
+stepdefinitions/AmazonStepDefinitions.class
+stepdefinitions/MycoursedemyStepdefinitions.class
+utilities/ReusableMethods.class
+utilities/ConfigReader.class
+pages/MycoursedemyPage.class
+runners/TestRunner2.class
+runners/TestRunner1.class
+stepdefinitions/Hooks.class
+pages/HerokuappPage.class
+utilities/ReusableMethods$1.class
+stepdefinitions/AutomationStepdefinitions.class
+stepdefinitions/HerokuappStepdefinitions.class
+utilities/Driver.class
+pages/AutomationPage.class
+pages/AmazonPage.class
+utilities/ReusableMethods$2.class

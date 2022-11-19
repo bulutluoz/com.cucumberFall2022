@@ -4,7 +4,7 @@
 
     Background: amazon anasayfaya gitme
       Given Kullanici amazon anasayfaya gider
-    @Paralel1
+    @pt1
     Scenario: TC05  Kullanici amazonda Nutella aramasi yapar
 
 

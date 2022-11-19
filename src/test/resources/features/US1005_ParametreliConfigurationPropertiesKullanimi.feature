@@ -4,7 +4,7 @@
     # 3 farkli senaryo olusturup
     # amazon, mycoursedemy ve wisequarter anasayfalarina gidip
     # url'in bu kelimeleri icerdigini test edin
-
+    @pt2
     Scenario: TC09 kullanici amazon sayfasina gidebilmeli
       Given Kullanici "arabamUrl" anasayfaya gider
       Then url'in "arabam" icerdigini test eder
