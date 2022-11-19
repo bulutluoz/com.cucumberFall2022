@@ -1,62 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="5" time="29.377">
-    <testcase classname="US1010 liste olarak verilen wrong user ile negatif login testi" name="_2" time="6.758">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="12.72">
+    <testcase classname="US1011 Automation Practice Kullanici Olusturma Testi" name="TC18 Kullanici yeni kullanici olusturabilmeli" time="12.635">
         <system-out>
-            <![CDATA[Given Kullanici "myUrl" anasayfaya gider....................................passed
-Then myCourse anasayfa login linkine tiklar.................................passed
-And myCourse kullanici adi olarak "myYanlisEmail" girer.....................passed
-And myCourse password olarak "myYanlisPassword" girer.......................passed
-Then myCourse login butonuna basar..........................................passed
-And myCourse giris yapilamadigini test eder.................................passed
-Then Sayfayi kapatir........................................................passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="US1010 liste olarak verilen wrong user ile negatif login testi" name="_3" time="5.628">
-        <system-out>
-            <![CDATA[Given Kullanici "myUrl" anasayfaya gider....................................passed
-Then myCourse anasayfa login linkine tiklar.................................passed
-And myCourse kullanici adi olarak "myYanlisEmail1" girer....................passed
-And myCourse password olarak "myYanlisPassword1" girer......................passed
-Then myCourse login butonuna basar..........................................passed
-And myCourse giris yapilamadigini test eder.................................passed
-Then Sayfayi kapatir........................................................passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="US1010 liste olarak verilen wrong user ile negatif login testi" name="_4" time="5.493">
-        <system-out>
-            <![CDATA[Given Kullanici "myUrl" anasayfaya gider....................................passed
-Then myCourse anasayfa login linkine tiklar.................................passed
-And myCourse kullanici adi olarak "myYanlisEmail2" girer....................passed
-And myCourse password olarak "myYanlisPassword2" girer......................passed
-Then myCourse login butonuna basar..........................................passed
-And myCourse giris yapilamadigini test eder.................................passed
-Then Sayfayi kapatir........................................................passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="US1010 liste olarak verilen wrong user ile negatif login testi" name="_5" time="5.58">
-        <system-out>
-            <![CDATA[Given Kullanici "myUrl" anasayfaya gider....................................passed
-Then myCourse anasayfa login linkine tiklar.................................passed
-And myCourse kullanici adi olarak "myYanlisEmail3" girer....................passed
-And myCourse password olarak "myYanlisPassword3" girer......................passed
-Then myCourse login butonuna basar..........................................passed
-And myCourse giris yapilamadigini test eder.................................passed
-Then Sayfayi kapatir........................................................passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="US1010 liste olarak verilen wrong user ile negatif login testi" name="_6" time="5.809">
-        <system-out>
-            <![CDATA[Given Kullanici "myUrl" anasayfaya gider....................................passed
-Then myCourse anasayfa login linkine tiklar.................................passed
-And myCourse kullanici adi olarak "myYanlisEmail4" girer....................passed
-And myCourse password olarak "myYanlisPassword4" girer......................passed
-Then myCourse login butonuna basar..........................................passed
-And myCourse giris yapilamadigini test eder.................................passed
-Then Sayfayi kapatir........................................................passed
+            <![CDATA[Given Kullanici "automationUrl" anasayfaya gider............................passed
+And user signUp linkine tiklar..............................................passed
+And New user bölümüne name ve email adresi girer............................passed
+And SignUp butonuna basar...................................................passed
+And user kisisel bilgilerini ve iletisim bilgilerini girer..................passed
+And user create account butonuna basar......................................passed
+Then hesap olustugunu dogrulayin............................................passed
 ]]>
         </system-out>
     </testcase>
