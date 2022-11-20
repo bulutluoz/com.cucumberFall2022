@@ -2,6 +2,7 @@ package databaseStepdefinitions;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import org.junit.Assert;
 
 import java.sql.*;
 
@@ -69,5 +70,34 @@ public class UsersStepdefinitions {
 
         resultSet.first();
         System.out.println(resultSet.getString("first_name")); // Laraine
+
+        // ikinci ve ucuncu isimleri yazdiralim
+        resultSet.next();
+        System.out.println(resultSet.getString("first_name"));
+        resultSet.next();
+        System.out.println(resultSet.getString("first_name"));
+
+        // 11.satirdaki ismin trever oldugunu test edelim
+        resultSet.absolute(11);
+        String actual11nciIsim=resultSet.getString("first_name");
+        String expected11nciIsim="Trever";
+        Assert.assertEquals(expected11nciIsim,actual11nciIsim);
+
+        // son ismin Jaime oldugunu test edin
+        resultSet.last();
+        String actualSonIsim=resultSet.getString("first_name");
+        String expectedSonIsim="Jaime";
+        Assert.assertEquals(expectedSonIsim,actualSonIsim);
+
+        // tum isim listesini yazdirin
+        System.out.println("===========");
+
+        resultSet.absolute(0);
+        int siraNo=1;
+
+        while(resultSet.next()){
+            System.out.println(siraNo+"-"+resultSet.getString("first_name"));
+            siraNo++;
+        }
     }
 }
