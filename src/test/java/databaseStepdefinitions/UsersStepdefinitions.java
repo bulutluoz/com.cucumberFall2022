@@ -49,11 +49,11 @@ public class UsersStepdefinitions {
         // sonra statement objesini kullanarak query'yi calistiracagiz
         // ve dönen sonucu resultSet objesine store edecegiz
 
-        String query="SELECT isim FROM users";
+        String query="SELECT first_name FROM users";
         resultSet=statement.executeQuery(query);
     }
     @Then("isim verilerini test eder")
-    public void isim_verilerini_test_eder() {
+    public void isim_verilerini_test_eder() throws SQLException {
 
         // ilk iki adimda gerekli java sql objelerini olusturduk
         // connection ile baglantiyi sagladik
@@ -65,6 +65,9 @@ public class UsersStepdefinitions {
         // ve istenen testleri yapabiliriz
 
         // ilk ismi yazdiralim
+        // resultSet iterator ile calisir
 
+        resultSet.first();
+        System.out.println(resultSet.getString("first_name")); // Laraine
     }
 }
