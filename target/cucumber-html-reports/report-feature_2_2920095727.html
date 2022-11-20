@@ -41,7 +41,7 @@ $(document).ready(function() {
 
 
 
-<title>Cucumber Reports (no 1) - Feature: US1003 Background kullanarak Amazon arama testi</title>
+<title>Cucumber Reports (no 1) - Feature: US1005 Parametreli Configuration.properties Kullanimi</title>
 
 </head>
 <body>
@@ -76,7 +76,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>cucumber-jvm-example</td>
         <td>1</td>
-      <td>19 Nov 2022, 18:52</td>
+      <td>20 Nov 2022, 09:05</td>
     </tr>
   </tbody>
 </table>
@@ -128,20 +128,20 @@ $(document).ready(function() {
 
         <tbody>
         <tr>
-          <td class="tagname">US1003 Background kullanarak Amazon arama testi</td>
-          <td      class="passed"    >4</td>
+          <td class="tagname">US1005 Parametreli Configuration.properties Kullanimi</td>
+          <td      class="passed"    >1</td>
+          <td      class="failed"    >1</td>
+          <td     class="skipped"   >1</td>
           <td >0</td>
           <td >0</td>
-          <td >0</td>
-          <td >0</td>
-          <td class="total">4</td>
+          <td class="total">3</td>
 
-          <td  class="passed"    >1</td>
           <td >0</td>
+          <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="4637383000">4.637</td>
-          <td class="passed">Passed</td>
+          <td class="duration" data-value="4555390000">4.555</td>
+          <td class="failed">Failed</td>
         </tr>
         </tbody>
 
@@ -173,9 +173,9 @@ $(document).ready(function() {
 </div>
 
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Feature</span>
-  <span class="name">US1003 Background kullanarak Amazon arama testi</span>
+  <span class="name">US1005 Parametreli Configuration.properties Kullanimi</span>
 
 
 </div>
@@ -188,17 +188,19 @@ $(document).ready(function() {
 
 
 <div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2226523296.html">@Regression</a>
 </div>
 
 
-  <span class="lead-duration duration">2.262</span>
+  <span class="lead-duration duration">4.555</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
 
-<div class="brief passed">
-  <span class="keyword indention">Background</span>
-  <span class="name">amazon anasayfaya gitme</span>
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">TC10 kullanici mycoursedemy sayfasina gidebilmeli</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -207,16 +209,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details ">
+  <div id="element-1" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-2">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -226,15 +228,15 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-2" class="inner-level collapse collapsable-details ">
+  <div id="steps-2" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
 <div class="brief step-name-Given passed">
   <span class="keyword indention">Given</span>
-  <span class="name">Kullanici amazon anasayfaya gider</span>
+  <span class="name">Kullanici <span class="argument">&quot;myUrl&quot;</span> anasayfaya gider</span>
 
-  <span class="lead-duration duration">2.262</span>
+  <span class="lead-duration duration">4.444</span>
 
 </div>
 
@@ -254,70 +256,14 @@ $(document).ready(function() {
 
 
       </div>
-  </div>
-</div>
-
-
-
-
-
-  </div>
-</div>
-
-
-<div class="element">
-
-
-<div class="tags indention">
-    <b>Tags:</b>
-       <a href="report-tag_2149501548.html">@pt1</a>
-</div>
-
-
-  <span class="lead-duration duration">2.374</span>
-
-
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-3">
-
-<div class="brief passed">
-  <span class="keyword indention">Scenario</span>
-  <span class="name">TC05  Kullanici amazonda Nutella aramasi yapar</span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-3" class="collapse collapsable-details ">
-
-
-
-
-
-<div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-4">
-
-<div class="brief passed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </div>
-
-  <div id="steps-4" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then failed">
   <span class="keyword indention">Then</span>
-  <span class="name">Arama cubuguna Nutella yazip aratir</span>
+  <span class="name">url'in <span class="argument">&quot;mycoursedemy&quot;</span> icerdigini test eder</span>
 
-  <span class="lead-duration duration">2.229</span>
+  <span class="lead-duration duration">0.111</span>
 
 </div>
 
@@ -325,6 +271,23 @@ $(document).ready(function() {
 
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-3">
+          <a>java.lang.AssertionError</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details  in ">
+        <pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at stepdefinitions.AmazonStepDefinitions.urlInIcerdiginiTestEder(AmazonStepDefinitions.java:79)
+	at &#10045;.url'in &quot;mycoursedemy&quot; icerdigini test eder(file:///Users/ahmetbulutluoz/Desktop/com.CucumberFall2022/src/test/resources/features/US1005_ParametreliConfigurationPropertiesKullanimi.feature:15)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -340,38 +303,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">Arama sonuclarinin Nutella icerdigini test eder</span>
-
-  <span class="lead-duration duration">0.018</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">Sayfayi kapatir</span>
 
-  <span class="lead-duration duration">0.126</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -398,7 +334,7 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-5">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-4">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -410,13 +346,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-5" class="inner-level collapse collapsable-details ">
+    <div id="after-4" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">1.113</span>
+  <span class="lead-duration duration">0.545</span>
 
           </div>
 
@@ -425,6 +361,21 @@ $(document).ready(function() {
 
 
 
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-5" class="collapsable-control">
+      <a>screenshots</a>
+      <a href="embeddings/embedding_-107515521.png" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-5" class="collapse collapsable-details ">
+      <div class="embedding-content">
+        <img src="embeddings/embedding_-107515521.png">
+      </div>
+    </div>
+  </div>
+  </div>
 
         </div>
     </div>
