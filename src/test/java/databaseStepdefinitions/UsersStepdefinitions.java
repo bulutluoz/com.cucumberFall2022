@@ -118,4 +118,13 @@ public class UsersStepdefinitions {
 
         Assert.assertEquals(actualSoyisim,verilenDeger);
     }
+
+    @Then("id degeri {int} olan kisinin {string} degerini {string} yapar")
+    public void idDegeriOlanKisininDegeriniYapar(int id, String fieldName, String istenenDeger) throws SQLException {
+
+        String query= "UPDATE users SET "+fieldName+"='"+istenenDeger+"' WHERE id="+id;
+
+        statement.executeQuery(query);
+
+    }
 }

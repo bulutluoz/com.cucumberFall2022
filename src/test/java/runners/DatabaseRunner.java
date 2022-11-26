@@ -12,7 +12,7 @@ import org.junit.runner.RunWith;
         },
         features = "src/test/resources/features",
         glue="databaseStepdefinitions",
-        tags= "@soyisim",
+        tags= "@update",
         dryRun = false
 )
 
