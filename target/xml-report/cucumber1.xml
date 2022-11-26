@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="5" time="29.377">
+    <testcase classname="US1009 Kullanici liste olarak verilen urunleri Amazon'da aratir" name="TC17 Kullanici liste olarak arama testi yapabilmeli" time="7.25">
+        <system-out>
+            <![CDATA[Given Kullanici "amazonUrl" anasayfaya gider................................passed
+Then Arama cubuguna "Nutella" yazip aratir..................................passed
+And Arama sonuclarinin "Nutella" icerdigini test eder.......................passed
+Then Sayfayi kapatir........................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US1009 Kullanici liste olarak verilen urunleri Amazon'da aratir" name="TC17 Kullanici liste olarak arama testi yapabilmeli 2" time="5.69">
+        <system-out>
+            <![CDATA[Given Kullanici "amazonUrl" anasayfaya gider................................passed
+Then Arama cubuguna "Java" yazip aratir.....................................passed
+And Arama sonuclarinin "Java" icerdigini test eder..........................passed
+Then Sayfayi kapatir........................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US1009 Kullanici liste olarak verilen urunleri Amazon'da aratir" name="TC17 Kullanici liste olarak arama testi yapabilmeli 3" time="4.788">
+        <system-out>
+            <![CDATA[Given Kullanici "amazonUrl" anasayfaya gider................................passed
+Then Arama cubuguna "Apple" yazip aratir....................................passed
+And Arama sonuclarinin "Apple" icerdigini test eder.........................passed
+Then Sayfayi kapatir........................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US1009 Kullanici liste olarak verilen urunleri Amazon'da aratir" name="TC17 Kullanici liste olarak arama testi yapabilmeli 4" time="5.545">
+        <system-out>
+            <![CDATA[Given Kullanici "amazonUrl" anasayfaya gider................................passed
+Then Arama cubuguna "Samsung" yazip aratir..................................passed
+And Arama sonuclarinin "Samsung" icerdigini test eder.......................passed
+Then Sayfayi kapatir........................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US1009 Kullanici liste olarak verilen urunleri Amazon'da aratir" name="TC17 Kullanici liste olarak arama testi yapabilmeli 5" time="5.999">
+        <system-out>
+            <![CDATA[Given Kullanici "amazonUrl" anasayfaya gider................................passed
+Then Arama cubuguna "LG" yazip aratir.......................................passed
+And Arama sonuclarinin "LG" icerdigini test eder............................passed
+Then Sayfayi kapatir........................................................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>

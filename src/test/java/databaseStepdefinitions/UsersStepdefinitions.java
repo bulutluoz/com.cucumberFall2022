@@ -100,4 +100,22 @@ public class UsersStepdefinitions {
             siraNo++;
         }
     }
+
+
+
+
+
+    @Then("id si {int} olan kisinin {string} degerinin {string} oldugunu test eder")
+    public void idSiOlanKisininDegerininOldugunuTestEder(int id, String last_name, String verilenDeger) throws SQLException {
+        // Id'si 14 olan user'in  "last_name" degerini getir
+        // SELECT last_name FROM users WHERE id=14
+        //String query="SELECT last_name FROM users";
+        String query= "SELECT "+last_name+" FROM users WHERE id="+id;
+
+        resultSet=statement.executeQuery(query);
+        resultSet.first();
+        String actualSoyisim= resultSet.getString("last_name");
+
+        Assert.assertEquals(actualSoyisim,verilenDeger);
+    }
 }
