@@ -1,20 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="1.786">
-    <testcase classname="JDBC03 Kullanici database'de update yapabilmeli" name="TC03 kullanici id degeri ile istedigi soyismi update ettigini test eder" time="1.704">
-        <failure message="Statement.executeQuery() cannot issue statements that do not produce result sets." type="java.sql.SQLException">
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="1.938">
+    <testcase classname="JDBC03 Kullanici database'de update yapabilmeli" name="TC03 kullanici id degeri ile istedigi soyismi update ettigini test eder" time="1.852">
+        <failure message="expected:&lt;[happiness]&gt; but was:&lt;[Pymar]&gt;" type="org.junit.ComparisonFailure">
             <![CDATA[Given Kullanici JDBC ile database'e baglanir................................passed
-Then id degeri 14 olan kisinin "last_name" degerini "happiness" yapar.......failed
-And id si 14 olan kisinin "last_name" degerinin "happiness" oldugunu test eder.skipped
+Then id degeri 14 olan kisinin "last_name" degerini "happiness" yapar.......passed
+And id si 14 olan kisinin "last_name" degerinin "happiness" oldugunu test eder.failed
 
 StackTrace:
-java.sql.SQLException: Statement.executeQuery() cannot issue statements that do not produce result sets.
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
-	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1135)
-	at databaseStepdefinitions.UsersStepdefinitions.idDegeriOlanKisininDegeriniYapar(UsersStepdefinitions.java:127)
-	at ✽.id degeri 14 olan kisinin "last_name" degerini "happiness" yapar(file:///Users/ahmetbulutluoz/Desktop/com.CucumberFall2022/src/test/resources/features/JDBC03_updateTesti.feature:6)
+org.junit.ComparisonFailure: expected:<[happiness]> but was:<[Pymar]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at databaseStepdefinitions.UsersStepdefinitions.idSiOlanKisininDegerininOldugunuTestEder(UsersStepdefinitions.java:119)
+	at ✽.id si 14 olan kisinin "last_name" degerinin "happiness" oldugunu test eder(file:///Users/ahmetbulutluoz/Desktop/com.CucumberFall2022/src/test/resources/features/JDBC03_updateTesti.feature:7)
 ]]>
         </failure>
     </testcase>

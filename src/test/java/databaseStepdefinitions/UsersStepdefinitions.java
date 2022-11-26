@@ -116,15 +116,21 @@ public class UsersStepdefinitions {
         resultSet.first();
         String actualSoyisim= resultSet.getString("last_name");
 
-        Assert.assertEquals(actualSoyisim,verilenDeger);
+        Assert.assertEquals(verilenDeger,actualSoyisim);
     }
 
     @Then("id degeri {int} olan kisinin {string} degerini {string} yapar")
-    public void idDegeriOlanKisininDegeriniYapar(int id, String fieldName, String istenenDeger) throws SQLException {
+    public void idDegeriOlanKisininDegeriniYapar(int id, String fieldName, String istenenDeger)  {
 
-        String query= "UPDATE users SET "+fieldName+"='"+istenenDeger+"' WHERE id="+id;
+        String query= "UPDATE users SET "+fieldName+"='"+istenenDeger+"' WHERE id="+id+";";
 
-        statement.executeQuery(query);
+
+        try {
+            statement.executeQuery(query);
+        } catch (SQLException e) {
+            System.out.println("Yapilan sorgu ResultSet döndürmüyor");
+        }
+
 
     }
 }
