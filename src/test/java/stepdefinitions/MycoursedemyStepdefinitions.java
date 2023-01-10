@@ -1,5 +1,6 @@
 package stepdefinitions;
 
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
 import pages.MycoursedemyPage;
@@ -32,5 +33,15 @@ public class MycoursedemyStepdefinitions {
     @Then("myCourse giris yapilamadigini test eder")
     public void mycourseGirisYapilamadiginiTestEder() {
         Assert.assertTrue(mycoursedemyPage.loginLinki.isDisplayed());
+    }
+
+    @And("{int} sn bekler")
+    public void snBekler(int saniye) {
+
+        try {
+            Thread.sleep(saniye*1000);
+        } catch (InterruptedException e) {
+
+        }
     }
 }

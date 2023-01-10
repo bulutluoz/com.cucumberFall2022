@@ -1,46 +1,43 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="5" time="29.377">
-    <testcase classname="US1009 Kullanici liste olarak verilen urunleri Amazon'da aratir" name="TC17 Kullanici liste olarak arama testi yapabilmeli" time="7.25">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="30.684">
+    <testcase classname="US1010 liste olarak verilen wrong user ile negatif login testi" name="_2" time="11.017">
         <system-out>
-            <![CDATA[Given Kullanici "amazonUrl" anasayfaya gider................................passed
-Then Arama cubuguna "Nutella" yazip aratir..................................passed
-And Arama sonuclarinin "Nutella" icerdigini test eder.......................passed
+            <![CDATA[Given Kullanici "myUrl" anasayfaya gider....................................passed
+Then myCourse anasayfa login linkine tiklar.................................passed
+And myCourse kullanici adi olarak "myYanlisEmail" girer.....................passed
+And myCourse password olarak "myYanlisPassword" girer.......................passed
+And 1 sn bekler.............................................................passed
+Then myCourse login butonuna basar..........................................passed
+And 1 sn bekler.............................................................passed
+And myCourse giris yapilamadigini test eder.................................passed
 Then Sayfayi kapatir........................................................passed
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="US1009 Kullanici liste olarak verilen urunleri Amazon'da aratir" name="TC17 Kullanici liste olarak arama testi yapabilmeli 2" time="5.69">
+    <testcase classname="US1010 liste olarak verilen wrong user ile negatif login testi" name="_3" time="9.877">
         <system-out>
-            <![CDATA[Given Kullanici "amazonUrl" anasayfaya gider................................passed
-Then Arama cubuguna "Java" yazip aratir.....................................passed
-And Arama sonuclarinin "Java" icerdigini test eder..........................passed
+            <![CDATA[Given Kullanici "myUrl" anasayfaya gider....................................passed
+Then myCourse anasayfa login linkine tiklar.................................passed
+And myCourse kullanici adi olarak "myYanlisEmail1" girer....................passed
+And myCourse password olarak "myYanlisPassword1" girer......................passed
+And 1 sn bekler.............................................................passed
+Then myCourse login butonuna basar..........................................passed
+And 1 sn bekler.............................................................passed
+And myCourse giris yapilamadigini test eder.................................passed
 Then Sayfayi kapatir........................................................passed
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="US1009 Kullanici liste olarak verilen urunleri Amazon'da aratir" name="TC17 Kullanici liste olarak arama testi yapabilmeli 3" time="4.788">
+    <testcase classname="US1010 liste olarak verilen wrong user ile negatif login testi" name="_4" time="9.667">
         <system-out>
-            <![CDATA[Given Kullanici "amazonUrl" anasayfaya gider................................passed
-Then Arama cubuguna "Apple" yazip aratir....................................passed
-And Arama sonuclarinin "Apple" icerdigini test eder.........................passed
-Then Sayfayi kapatir........................................................passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="US1009 Kullanici liste olarak verilen urunleri Amazon'da aratir" name="TC17 Kullanici liste olarak arama testi yapabilmeli 4" time="5.545">
-        <system-out>
-            <![CDATA[Given Kullanici "amazonUrl" anasayfaya gider................................passed
-Then Arama cubuguna "Samsung" yazip aratir..................................passed
-And Arama sonuclarinin "Samsung" icerdigini test eder.......................passed
-Then Sayfayi kapatir........................................................passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="US1009 Kullanici liste olarak verilen urunleri Amazon'da aratir" name="TC17 Kullanici liste olarak arama testi yapabilmeli 5" time="5.999">
-        <system-out>
-            <![CDATA[Given Kullanici "amazonUrl" anasayfaya gider................................passed
-Then Arama cubuguna "LG" yazip aratir.......................................passed
-And Arama sonuclarinin "LG" icerdigini test eder............................passed
+            <![CDATA[Given Kullanici "myUrl" anasayfaya gider....................................passed
+Then myCourse anasayfa login linkine tiklar.................................passed
+And myCourse kullanici adi olarak "myYanlisEmail2" girer....................passed
+And myCourse password olarak "myYanlisPassword2" girer......................passed
+And 1 sn bekler.............................................................passed
+Then myCourse login butonuna basar..........................................passed
+And 1 sn bekler.............................................................passed
+And myCourse giris yapilamadigini test eder.................................passed
 Then Sayfayi kapatir........................................................passed
 ]]>
         </system-out>
